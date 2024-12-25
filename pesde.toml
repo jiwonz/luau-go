@@ -1,0 +1,22 @@
+name = "caveful_games/threadpool"
+version = "0.2.0"
+description = "Execute the functions in a separate thread, threads are pooled and reused. Credit to lukadev-0/util.luau"
+authors = ["LukaDev <luka@lukadev.me> (https://lukadev.me/)", "jiwonz"]
+repository = "https://github.com/CavefulGames/threadpool"
+license = "MIT"
+
+[target]
+environment = "roblox"
+lib = "lib.luau"
+build_files = ["lib.luau"]
+
+[indices]
+default = "https://github.com/pesde-pkg/index"
+
+[scripts]
+roblox_sync_config_generator = ".pesde/scripts/roblox_sync_config_generator.luau"
+sourcemap_generator = ".pesde/scripts/sourcemap_generator.luau"
+
+[dev_dependencies]
+scripts = { name = "pesde/scripts_rojo", version = "^0.1.0", target = "lune" }
+rojo = { name = "pesde/rojo", version = "^7.4.4", target = "lune" }
