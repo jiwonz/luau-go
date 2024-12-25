@@ -4,6 +4,7 @@ description = "Execute the functions in a separate thread, threads are pooled an
 authors = ["LukaDev <luka@lukadev.me> (https://lukadev.me/)", "jiwonz"]
 repository = "https://github.com/CavefulGames/threadpool"
 license = "MIT"
+includes = ["pesde.toml", "README.md", "lib.luau"]
 
 [target]
 environment = "roblox"
