@@ -2,7 +2,7 @@
 
 local freeThreads: { thread } = {}
 
-local function run<T...>(f: (T...) -> (), thread: thread, ...)
+local function run<A...>(f: (A...) -> (), thread: thread, ...)
 	f(...)
 	table.insert(freeThreads, thread)
 end
@@ -25,7 +25,7 @@ end
 	end)
 	```
 ]=]
-return function(f: (T...) -> (), ...: T...): thread
+return function(f: (A...) -> (), ...: A...): thread
 	local thread
 	if #freeThreads > 0 then
 		thread = freeThreads[#freeThreads]
