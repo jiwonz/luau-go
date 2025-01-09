@@ -1,7 +1,7 @@
 name = "caveful_games/threadpool"
-version = "0.2.0"
+version = "0.2.1"
 description = "Execute the functions in a separate thread, threads are pooled and reused. Credit to lukadev-0/util.luau"
-authors = ["LukaDev <luka@lukadev.me> (https://lukadev.me/)", "jiwonz"]
+authors = ["LukaDev <luka@lukadev.me> (https://lukadev.me/)", "jiwonz <me@jiwonz.kr>"]
 repository = "https://github.com/CavefulGames/threadpool"
 license = "MIT"
 includes = ["pesde.toml", "README.md", "lib.luau"]
@@ -21,3 +21,6 @@ sourcemap_generator = ".pesde/scripts/sourcemap_generator.luau"
 [dev_dependencies]
 scripts = { name = "pesde/scripts_rojo", version = "^0.1.0", target = "lune" }
 rojo = { name = "pesde/rojo", version = "^7.4.4", target = "lune" }
+selene = { name = "pesde/selene", version = "^0.27.1", target = "lune" }
+luau_lsp = { name = "pesde/luau_lsp", version = "^1.37.0", target = "lune" }
+stylua = { name = "pesde/stylua", version = "^2.0.2", target = "lune" }

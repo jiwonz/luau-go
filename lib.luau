@@ -1,3 +1,6 @@
+--!optimize 2
+--!native
+
 -- source credit to https://github.com/lukadev-0/util.luau/blob/main/packages/threadpool/init.luau
 
 local freeThreads: { thread } = {}
@@ -25,7 +28,7 @@ end
 	end)
 	```
 ]=]
-return function(f: (A...) -> (), ...: A...): thread
+return function<A...>(f: (A...) -> (), ...: A...): thread
 	local thread
 	if #freeThreads > 0 then
 		thread = freeThreads[#freeThreads]
