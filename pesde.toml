@@ -15,7 +15,7 @@ default = "https://github.com/pesde-pkg/index"
 
 [dev_dependencies]
 luau_check = { name = "jiwonz/luau_check", version = "^0.3.7", target = "lune" }
-multitarget = { name = "jiwonz/multitarget", version = "^0.2.4", target = "lune" }
+multitarget = { name = "jiwonz/multitarget", version = "^0.2.5", target = "lune" }
 darklua = { name = "pesde/darklua", version = "^0.16.0", target = "lune" }
 
 [dependencies]
