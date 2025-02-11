@@ -2,6 +2,8 @@
 
 -- source credit to https://github.com/lukadev-0/util.luau/blob/main/packages/threadpool/init.luau
 
+local task = require("../luau_packages/task")
+
 local freeThreads: { thread } = {}
 
 local function run<A...>(f: (A...) -> (), thread: thread, ...)

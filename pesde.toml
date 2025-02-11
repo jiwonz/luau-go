@@ -4,14 +4,19 @@ description = "Execute the functions in a separate thread, threads are pooled an
 authors = ["LukaDev <luka@lukadev.me> (https://lukadev.me/)", "jiwonz <me@jiwonz.kr>"]
 repository = "https://github.com/jiwonz/luau-go"
 license = "MIT"
-includes = ["pesde.toml", "README.md", "lib.luau", "LICENSE"]
+includes = ["pesde.toml", "README.md", "src/**", "LICENSE"]
 
 [target]
 environment = "luau"
-lib = "lib.luau"
+lib = "src/lib.luau"
 
 [indices]
 default = "https://github.com/pesde-pkg/index"
 
 [dev_dependencies]
 luau_check = { name = "jiwonz/luau_check", version = "^0.3.7", target = "lune" }
+multitarget = { name = "jiwonz/multitarget", version = "^0.2.3", target = "lune" }
+darklua = { name = "pesde/darklua", version = "^0.16.0", target = "lune" }
+
+[dependencies]
+task = { name = "jiwonz/task", version = "^0.1.0" }
