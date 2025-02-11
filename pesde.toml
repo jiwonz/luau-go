@@ -1,26 +1,17 @@
-name = "caveful_games/threadpool"
-version = "0.2.1"
+name = "jiwonz/go"
+version = "0.1.0"
 description = "Execute the functions in a separate thread, threads are pooled and reused. Credit to lukadev-0/util.luau"
 authors = ["LukaDev <luka@lukadev.me> (https://lukadev.me/)", "jiwonz <me@jiwonz.kr>"]
-repository = "https://github.com/CavefulGames/threadpool"
+repository = "https://github.com/jiwonz/luau-go"
 license = "MIT"
-includes = ["pesde.toml", "README.md", "lib.luau"]
+includes = ["pesde.toml", "README.md", "lib.luau", "LICENSE"]
 
 [target]
-environment = "roblox"
+environment = "luau"
 lib = "lib.luau"
-build_files = ["lib.luau"]
 
 [indices]
 default = "https://github.com/pesde-pkg/index"
 
-[scripts]
-roblox_sync_config_generator = ".pesde/scripts/roblox_sync_config_generator.luau"
-sourcemap_generator = ".pesde/scripts/sourcemap_generator.luau"
-
 [dev_dependencies]
-scripts = { name = "pesde/scripts_rojo", version = "^0.1.0", target = "lune" }
-rojo = { name = "pesde/rojo", version = "^7.4.4", target = "lune" }
-selene = { name = "pesde/selene", version = "^0.27.1", target = "lune" }
-luau_lsp = { name = "pesde/luau_lsp", version = "^1.37.0", target = "lune" }
-stylua = { name = "pesde/stylua", version = "^2.0.2", target = "lune" }
+luau_check = { name = "jiwonz/luau_check", version = "^0.3.7", target = "lune" }
