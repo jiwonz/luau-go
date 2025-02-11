@@ -1,4 +1,3 @@
---!optimize 2
 --!native
 
 -- source credit to https://github.com/lukadev-0/util.luau/blob/main/packages/threadpool/init.luau
@@ -19,12 +18,10 @@ end
 --[=[
 	Executes the given function in a separate thread, threads are pooled and reused.
 
-	별도의 스레드에서 지정된 함수를 실행하며 스레드는 풀링되어 재사용됩니다.
-
 	```lua
-	local t: thread = threadpool(function()
+	local t: thread = go(function()
 		task.wait(2)
-		print("Hello Caveful Games!")
+		print("Hello, World!")
 	end)
 	```
 ]=]
