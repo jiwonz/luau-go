@@ -1,6 +1,9 @@
 {
-	"languageMode": "strict",
-	"lint": {
-		"LocalShadow": false
-	}
+  "aliases": {
+    "pkg": "./lune_packages/"
+  },
+  "languageMode": "strict",
+  "lint": {
+    "LocalShadow": false
+  }
 }

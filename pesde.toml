@@ -1,22 +1,23 @@
 name = "jiwonz/go"
-version = "0.1.0"
+version = "0.2.0"
 description = "Execute the functions in a separate thread, threads are pooled and reused. Credit to lukadev-0/util.luau"
 authors = ["LukaDev <luka@lukadev.me> (https://lukadev.me/)", "jiwonz <me@jiwonz.kr>"]
 repository = "https://github.com/jiwonz/luau-go"
 license = "MIT"
 includes = ["pesde.toml", "README.md", "src/**", "LICENSE"]
+private = true
 
 [target]
-environment = "luau"
+environment = "lune"
 lib = "src/lib.luau"
 
 [indices]
 default = "https://github.com/pesde-pkg/index"
 
 [dev_dependencies]
-luau_check = { name = "jiwonz/luau_check", version = "^0.3.7", target = "lune" }
-multitarget = { name = "jiwonz/multitarget", version = "^0.2.5", target = "lune" }
-darklua = { name = "pesde/darklua", version = "^0.16.0", target = "lune" }
+luau_check = { name = "jiwonz/luau_check", version = "^0.3.8" }
+multitarget = { name = "jiwonz/multitarget", version = "^0.4.0-rc.8" }
+darklua = { name = "pesde/darklua", version = "^0.16.0" }
 
 [dependencies]
 task = { name = "jiwonz/task", version = "^0.1.0" }

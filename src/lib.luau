@@ -2,7 +2,7 @@
 
 -- source credit to https://github.com/lukadev-0/util.luau/blob/main/packages/threadpool/init.luau
 
-local task = require("../luau_packages/task")
+local task = require("@pkg/task")
 
 local freeThreads: { thread } = {}
 
