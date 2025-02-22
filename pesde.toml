@@ -14,6 +14,10 @@ lib = "src/lib.luau"
 [indices]
 default = "https://github.com/pesde-pkg/index"
 
+[engines]
+lune = "^0.8.9"
+pesde = "^0.6.0-rc.8"
+
 [dev_dependencies]
 luau_check = { name = "jiwonz/luau_check", version = "^0.3.8" }
 multitarget = { name = "jiwonz/multitarget", version = "^0.4.0-rc.26" }
